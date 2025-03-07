@@ -1,31 +1,31 @@
-### BASIC LAYOUT OF STABLE DIFFUSION UI (Automatic1111)
+# BASIC LAYOUT OF STABLE DIFFUSION UI (Automatic1111)
 
-# Stable Diffusion Checkpoint
+## Stable Diffusion Checkpoint
 The basic model selector which you can bring in your own custom model or bring in models created by others.
 
-# text2img
+ **text2img**
 Create images just using text prompts.
 
-# img2img
+ **img2img**
 Create images using other images and text prompts.
 
-# Extras
+ **Extras**
 Primarily used for image processing including upscaling (Improve resolution and details).
 
-# PNG Info
+ **PNG Info**
 Used to extract metadata from images that were generated using Stable Diffusion. When you generate an image, the settings (prompts, model, seed, etc.) are embedded in the PNG file itself. This tab allows you to read and reuse those settings.
 
-# Checkpoint Merger
+ **Checkpoint Merger**
 Combines models/checkpoints up to 3 and create a merged model.
 
-# Train
+ **Train**
 Used for fine-tuning and training custom models, such as:
 Ex. LoRA (Low-Rank Adaptation), Textual Inversion, DreamBooth, Hypernetworks.
 
-# Setting
+ **Setting**
 Adjust the basic setting in the stable diffusion provided.
 
-# Extension
+ **Extension**
 Extensions you can turn on, off, add, remove, from stable diffusion.
 
 ### GENERATION TAB
@@ -100,9 +100,11 @@ Control the iteration/cycle count for the AI to refine the image. Higher count =
 # Refiner (For Stable Diffusion XL)
 Designed to improve image quality by enhancing finer details while the image is being generated. Improves in details, textures, and sharpness.
 
-# IMPORTANT FOR VRAM USAGE
-- **Batch Count**: Defines the number of times the model will run the generation process. Doesn't increase VRAM usage, generates multiple images but one at a time.
-- **Batch Size**: Determines how many images are generated simultaneously in one go. Uses more VRAM as the model generates multiple images at once all together.
+
+# Batch Count: Defines the number of times the model will run the generation process. Doesn't increase VRAM usage, generates multiple images but one at a time.
+
+# Batch Size: Determines how many images are generated simultaneously in one go. Uses more VRAM as the model generates multiple images at once all together.
+### IMPORTANT FOR VRAM USAGE
 
 # CFG Scale
 Accuracy with how much the AI is supposed to follow your text prompt. "Strictness" for your model.
