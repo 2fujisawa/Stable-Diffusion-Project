@@ -1,20 +1,30 @@
-from PIL import Image
 import os
+from PIL import Image
 
-# Set input & output folder
-input_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset"
-output_folder = "/Users/linusfujisawa/Desktop/pixar_style_output"
-size = (512, 512)  # Change to (1024, 1024) for SDXL
+# Paths (Update these)
+input_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset"  # Original dataset folder
+output_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset_resized"  # Resized output folder
+target_size = (512, 512)  # Set your resize dimensions
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
 
-# Loop through images and resize
-for filename in os.listdir(input_folder):
-    if filename.endswith(".png") or filename.endswith(".jpg"):
-        img_path = os.path.join(input_folder, filename)
-        img = Image.open(img_path)
-        img = img.resize(size, Image.LANCZOS)  # High-quality resize
-        img.save(os.path.join(output_folder, filename))
+# Walk through all subfolders and process images
+for root, dirs, files in os.walk(input_folder):
+    for filename in files:
+        if filename.endswith(".png") or filename.endswith(".jpg"):
+            input_path = os.path.join(root, filename)
 
-print("✅ All images resized successfully!")
+            # Create the same subfolder structure in output
+            relative_path = os.path.relpath(root, input_folder)
+            output_subfolder = os.path.join(output_folder, relative_path)
+            os.makedirs(output_subfolder, exist_ok=True)
+
+            output_path = os.path.join(output_subfolder, filename)
+
+            # Open image and resize
+            with Image.open(input_path) as img:
+                img = img.resize(target_size, Image.LANCZOS)  # Use LANCZOS filter for high-quality downsampling
+                img.save(output_path)
+
+            print(f"✅ Resized: {input_path} → {output_path}")
