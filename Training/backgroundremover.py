@@ -4,7 +4,7 @@ from PIL import Image
 
 # Paths (Update these)
 input_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset_resized"  # Your resized dataset folder
-output_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset_no_bg"  # Output for no background
+output_folder = "/Users/linusfujisawa/Desktop/PixarDataSetAfter"  # Output for no background
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)

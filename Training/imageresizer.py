@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 # Paths (Update these)
-input_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset"  # Original dataset folder
+input_folder = "/Users/linusfujisawa/Desktop/PixarDataSetBefore"  # Original dataset folder
 output_folder = "/Users/linusfujisawa/Desktop/pixar_style_dataset_resized"  # Resized output folder
 target_size = (512, 512)  # Set your resize dimensions
 
