@@ -1,58 +1,38 @@
-# AI Pet Image Generator (Stable Diffusion + DreamBooth Project)
+# AI Pet Image Generator (Stable Diffusion + DreamBooth)
 
-This is a personal learning project where I explored **Stable Diffusion** and **DreamBooth fine-tuning** for AI image generation.  
-I focused on generating **Pixar-style pet images**, training a custom model and experimenting with different prompts, styles, and techniques.
+This project explores the use of **Stable Diffusion 3.5** combined with **DreamBooth fine-tuning** to generate highly stylized, Pixar-inspired pet portraits.  
+The goal was to understand how to fine-tune large diffusion models on a custom dataset, and how to run a complete **end-to-end image generation pipeline**.
 
----
-
-## What I Did
-
-✅ Trained a **Stable Diffusion model** using **DreamBooth** on pet images  
-✅ Studied how **diffusion models** and **fine-tuning** processes work  
-✅ Experimented with **prompt engineering** to improve output style and quality  
-✅ Generated and analyzed **hundreds of AI pet images**  
-✅ Tuned training parameters to achieve better **style consistency**  
+I trained a custom model using **Google Colab** and DreamBooth techniques, then imported the model to my **local machine** to perform optimized image generation.  
+This process allowed me to better understand both **cloud-based training** and **local deployment** of AI models.
 
 ---
 
-## What I Learned
+## Project Highlights
 
-🧠 **How Stable Diffusion and DreamBooth work** — model architecture, denoising process, fine-tuning workflow  
-🎨 **How to control output style** through training and prompts  
-🛠️ **How training parameters impact model quality**  
-🚀 **How to approach building a real-world AI product** from these tools  
-⚠️ **Challenges and limitations** — dataset quality, style consistency, generalization  
-
----
-
-## Why This Matters
-
-✅ Shows initiative — I took on an advanced AI/ML project outside of coursework  
-✅ Shows technical curiosity — I worked to deeply understand the model and process  
-✅ Shows creativity — applying AI to a unique, fun, and marketable idea  
-✅ Shows product thinking — considering how to turn this into a real product for users  
+- Fine-tuned **Stable Diffusion 3.5** using **DreamBooth** on a curated pet image dataset  
+- Used **Google Colab** for efficient cloud-based model training  
+- Imported the trained model to **local environment** for faster, optimized inference  
+- Built a functional pipeline: **cloud training → local inference → image generation and evaluation**  
+- Applied **prompt engineering** techniques to refine style, consistency, and image quality  
 
 ---
 
-## Example Results
+## Key Skills and Learnings
 
-| Prompt | Result |
-|--------|--------|
-| "Golden retriever, Pixar style, happy, stars in background" | ![Example](outputs/example_1.png) |
-| "Cat in Zootopia style, sitting with flowers" | ![Example](outputs/example_2.png) |
-
----
-
-## Next Steps
-
-- Improve training with more diverse, high-quality data  
-- Experiment with **LoRA** and **ControlNet** for better results  
-- Prototype a **simple web app** for user uploads and pet image generation  
+- Understanding of **Stable Diffusion architecture** and **DreamBooth fine-tuning** workflows  
+- Experience with **managing models across cloud and local environments**  
+- Setting up **Stable Diffusion for local use**, including handling dependencies and performance optimization  
+- Practical knowledge of **prompt tuning** and **style transfer**  
+- Exposure to **AI product workflows**, from raw training data to usable outputs  
 
 ---
 
-**Author:** Mitsuo Linus Fujisawa  
-**GitHub:** [https://github.com/2fujisawa](https://github.com/2fujisawa)  
-**LinkedIn:** [Your LinkedIn link here]  
+## Future Work
+
+- Further improve style consistency through advanced fine-tuning (LoRA, ControlNet)  
+- Experiment with **larger datasets** and more complex styles  
+- Prototype a **simple front-end** for user-driven pet image generation  
+- Optimize pipeline for **scalability and production readiness**  
 
 ---
