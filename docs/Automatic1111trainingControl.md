@@ -2,7 +2,7 @@
 
 Originally, I attempted to run training locally, but since I was using a **Mac** (which lacks NVIDIA GPU and CUDA support), I wasn’t able to run **Stable Diffusion training or DreamBooth locally**.  
 
-To overcome this limitation:  
+To overcome this:  
 ✅ I used **Google Colab** ☁️ to perform the training and fine-tuning in the cloud.  
 ✅ After training, I transferred the **trained model** to my **local NVIDIA-based PC** 🖥️ and ran it using **Automatic1111 Web UI** for optimized local image generation.
 
@@ -86,5 +86,3 @@ Control how the model learns:
 ✅ Regularization  
 
 Proper tuning ensures your model **learns the target style** (Pixar) without overfitting.
-
----
