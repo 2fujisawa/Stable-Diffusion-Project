@@ -1,3 +1,5 @@
+#Simple file to remove background from images in a folder remember to install rembg first
+# Also adjust your directories accordingly
 import os
 from rembg import remove
 from PIL import Image
