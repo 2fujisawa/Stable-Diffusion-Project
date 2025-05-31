@@ -22,7 +22,7 @@ This led me to explore **Stable Diffusion** and **DreamBooth fine-tuning** for m
 
 ✅ Fine-tuned **Stable Diffusion 3.5** using **DreamBooth** on a curated pet image dataset  
 ✅ Used **Google Colab** ☁️ for efficient cloud-based model training  
-✅ Deployed the trained model on a **local environment** 🖥️ for fast, optimized inference  
+✅ Imported the trained model and deployed it locally using **Automatic1111 Web UI** 🖥️  
 ✅ Built an **end-to-end pipeline**: cloud training → local inference → image generation and evaluation  
 ✅ Applied **prompt engineering** 📝 to refine style, consistency, and image quality  
 
@@ -32,7 +32,7 @@ This led me to explore **Stable Diffusion** and **DreamBooth fine-tuning** for m
 
 🔍 Deep understanding of **Stable Diffusion architecture** and **DreamBooth fine-tuning** workflows  
 🔄 Experience managing **models across cloud and local environments**  
-🛠️ Set up **Stable Diffusion for local use**, including dependencies and performance optimization  
+🛠️ Set up **Stable Diffusion with Automatic1111 Web UI** for local use and optimized performance  
 🎨 Practical knowledge of **prompt tuning** and **style transfer**  
 🚀 Exposure to **AI product workflows**, from raw training data to usable outputs  
 
